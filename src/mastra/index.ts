@@ -7,6 +7,7 @@ import { storyboardAgent } from './agents/storyboard-agent';
 import { imageGeneratorAgent } from './agents/image-generator-agent';
 import { exportAgent } from './agents/export-agent';
 import { pdfUploadAgent } from './agents/pdf-upload-agent';
+import { webSearchAgent } from './agents/web-search-agent';
 import { storyboardNetwork, storyboardNetworkLegacy } from './agentnetwork/agent-network';
 import { automatedAgentNetworkWorkflow } from './workflows/agent-network-automated-workflow';
 
@@ -23,6 +24,7 @@ export const mastra = new Mastra({
     imageGeneratorAgent,
     exportAgent,
     pdfUploadAgent,
+    webSearchAgent,
   },
   networks: {
     storyboardNetworkLegacy,
